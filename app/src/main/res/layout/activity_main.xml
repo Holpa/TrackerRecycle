@@ -101,7 +101,7 @@
 
                 <TableRow
                     android:id="@+id/Main_Activity_PostOrders_Table_Title_Row"
-                    android:background="#8ca7b4"
+                    android:background="#000000"
                     android:padding="10dp">
 
                     <TextView
@@ -109,6 +109,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/post_orders"
+                        android:textColor="@android:color/white"
                         android:textSize="24sp" />
 
                 </TableRow>

@@ -39,11 +39,17 @@ public class GUIMakerControl implements View.OnClickListener {
         for(int i = 0; i < postOrders.size()/2 ; i++) {
             //make View
             View divider = new View(ct);
-            divider.setBackgroundColor(Color.BLACK);
+            divider.setBackgroundColor(Color.WHITE);
             divider.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT,1));
             divider.setBottom(1);
             //make tableRow
             TableRow tableRow = new TableRow(ct);
+            tableRow.setPadding(0,15,0,15);
+            if(i%2!=0)
+            {
+                tableRow.setBackgroundColor(Color.LTGRAY);
+            }
+
 //            tableRow.setClickable(true);
 //            tableRow.setOnClickListener(this);
             TableRow tableDivider = new TableRow(ct);
@@ -62,7 +68,7 @@ public class GUIMakerControl implements View.OnClickListener {
             //adding views
             tableRow.addView(textView_Title);
             tableRow.addView(bt_View);
-//            tableDivider.addView(divider);
+            tableDivider.addView(divider);
 
             ((TableLayout) this.activity.findViewById(R.id.Main_Activity_PostOrders_Table)).addView(tableRow, i + 1);
             ((TableLayout) this.activity.findViewById(R.id.Main_Activity_PostOrders_Table)).addView(tableDivider, i + 2);

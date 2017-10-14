@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         GUIMakerControl guiMakerControl = new GUIMakerControl(this);
-        guiMakerControl.makeTablePostOrders(this,new TextFilter().getPostOrders("<Title_E>amh</Title_E> <Instructions_E> jump </Instructions_E><Title_E>Mike</Title_E> <Instructions_E> BEER </Instructions_E>"));
+        guiMakerControl.makeTablePostOrders(this,new TextFilter().getPostOrders("<Title_E>amh</Title_E> <Instructions_E> jump </Instructions_E><Title_E>Mike</Title_E> <Instructions_E> BEER </Instructions_E><Title_E>CAM</Title_E> <Instructions_E> WTH </Instructions_E>"));
     }
 
     @Override
