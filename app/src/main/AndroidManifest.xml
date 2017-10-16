@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--
+            This registers our data source with android,
+            you can make the data accessible by other apps by setting exported to true
+            Note, that if you choose to do so, you will have to request permission to do so
+            on apps needing it, in their respective manifest file (this file)
+
+            This works similarly to how you need to provide permission
+            to application to access contacts, or text messages etc.
+
+            Hint: that's because those resources are exposed as content providers, just
+            like this one. =)
+        -->
+        <provider
+            android:name=".data.OrdersContentProvider"
+            android:authorities="com.example.ahmad.trackerrecycle"
+            android:exported="true" />
+
+        <activity android:name=".AddOrderActivity"  />
+        <activity android:name=".OrderDetailsActivity"></activity>
     </application>
 
 </manifest>

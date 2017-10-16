@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Color;
 import android.net.wifi.p2p.WifiP2pManager;
+import android.text.Layout;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -30,6 +32,9 @@ public class GUIMakerControl implements View.OnClickListener {
         int counterRow=0;
         pO= postOrders;
         //Post order TITLE
+
+
+
         for(int i = 0; i < postOrders.size()/2 ; i++) {
             //make View
             View divider = new View(ct);

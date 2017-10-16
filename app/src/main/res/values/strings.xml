@@ -2,4 +2,23 @@
     <string name="app_name">TrackerRecycle</string>
     <string name="post_orders">Post Orders</string>
     <string name="back_to_post_orders">Post Orders</string>
+
+    <!--General Use-->
+    <string name="button_create">Create</string>
+
+    <!--Order Details Activity-->
+    <string name="orderdetails_label_title">Order Title</string>
+    <string name="orderdetails_label_instructions">Instructions</string>
+
+    <string name="action_complete_order">Complete</string>
+
+
+    <!--Add Order Activity-->
+    <string name="addorder_enter_title">Enter Order Title</string>
+    <string name="addorder_enter_instructions">Enter Order Instructions</string>
+
+
+
+
+
 </resources>
